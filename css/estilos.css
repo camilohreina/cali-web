@@ -1,0 +1,1747 @@
+@font-face {
+  font-family: 'Visita';
+  src: url("../fonts/Pacifico-Regular.ttf"); }
+
+@font-face {
+  font-family: 'santiago';
+  src: url("../fonts/BigShouldersText-Regular.ttf"); }
+
+@font-face {
+  font-family: 'cali';
+  src: url("../fonts/BigShouldersText-Bold.ttf"); }
+
+@font-face {
+  font-family: 'contenido';
+  src: url("../fonts/GT-Walsheim-Pro-Regular.ttf"); }
+
+@font-face {
+  font-family: 'titulo';
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'contenido', Sans-serif;
+  font-size: 16px;
+  background-image: url("../img/texturas.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  vertical-align: top; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+footer {
+  font-family: 'contenido', Sans-serif;
+  font-size: 16px;
+  background-image: url("../img/footer.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  background: url("../img/fondo.png") #191717;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  max-height: 838px;
+  width: 100%;
+  height: 100%; }
+  header .contenedor .contenedor-texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 140px 0; }
+    header .contenedor .contenedor-texto .visita {
+      width: 18%;
+      font-family: 'Visita';
+      font-size: 3.5rem;
+      color: #fff;
+      padding-top: 90px; }
+    header .contenedor .contenedor-texto .ml11 .text-wrapper {
+      position: relative;
+      display: inline-block; }
+    header .contenedor .contenedor-texto .ml11 .line {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: #fff;
+      transform-origin: 0 50%; }
+    header .contenedor .contenedor-texto .ml11 .line1 {
+      top: 0;
+      left: 0; }
+    header .contenedor .contenedor-texto .ml11 .letters {
+      display: inline-block;
+      line-height: 1em; }
+    header .contenedor .contenedor-texto .textouno {
+      width: 82%;
+      font-family: 'santiago';
+      font-size: 5rem;
+      color: #fff; }
+    header .contenedor .contenedor-texto .textodos {
+      width: 82%;
+      font-family: 'cali';
+      font-size: 9.6875rem;
+      color: #fff; }
+    header .contenedor .contenedor-texto .ml15 {
+      text-transform: uppercase; }
+      header .contenedor .contenedor-texto .ml15 .word {
+        display: inline-block;
+        line-height: 1em; }
+  header .contenedor .menu {
+    margin: 200px 0 10px 0;
+    text-align: right; }
+    header .contenedor .menu a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: #fff;
+      padding: 0 25px;
+      display: inline-block;
+      border-bottom: 2px solid transparent; }
+    header .contenedor .menu a:hover {
+      border-bottom: 2px solid #fff; }
+    header .contenedor .menu .ml10 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      overflow: hidden; }
+    header .contenedor .menu .ml10 .letter {
+      display: inline-block;
+      line-height: 1em;
+      transform-origin: 0 0; }
+
+.main .cali .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .cali .contenedor .imagenuno {
+    margin: 85px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../img/belalcazar.png");
+    width: 59.5%;
+    height: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px; }
+    .main .cali .contenedor .imagenuno #txt1 {
+      padding: 15% 10px 15% 10px;
+      position: relative;
+      display: none;
+      color: #fff;
+      text-align: justify; }
+  .main .cali .contenedor .txt:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff; }
+  .main .cali .contenedor .imagendos {
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../img/cristo.png");
+    width: 35.5%;
+    height: 628px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px; }
+    .main .cali .contenedor .imagendos .txt {
+      padding: 50% 10px 50% 10px;
+      position: relative;
+      display: none;
+      color: #fff;
+      filter: bright(0, 5);
+      text-align: justify; }
+  .main .cali .contenedor .imagentres {
+    margin: -280px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../img/ermitachiqui.png");
+    width: 38.5%;
+    height: 561px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px; }
+    .main .cali .contenedor .imagentres .txt {
+      padding: 50% 10px 50% 10px;
+      position: relative;
+      display: none;
+      color: #fff;
+      filter: bright(0, 5);
+      text-align: justify; }
+  .main .cali .contenedor .imagencuatro {
+    margin: -20px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../img/bulevard.png");
+    width: 58.44%;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px; }
+    .main .cali .contenedor .imagencuatro .txt {
+      padding: 10% 10px 10% 10px;
+      position: relative;
+      display: none;
+      color: #fff;
+      filter: bright(0, 5);
+      text-align: justify; }
+
+.main .culturasalsera {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .culturasalsera .caja {
+    width: 100%; }
+    .main .culturasalsera .caja .titulo {
+      font-family: 'titulo';
+      font-size: 72px;
+      color: #fff;
+      margin: 110px 0 -10px 0px;
+      text-align: center; }
+    .main .culturasalsera .caja .linea {
+      border: 5px;
+      background-color: #fff;
+      width: 1030px;
+      height: 6px; }
+  .main .culturasalsera .contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 60px auto; }
+    .main .culturasalsera .contenedor .grupogran {
+      background-image: url("../img/salsagrupogrande.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 51%;
+      height: 292px;
+      border-radius: 10px; }
+    .main .culturasalsera .contenedor .textouno {
+      width: 48.1%;
+      height: 307px;
+      background-color: #1F0029;
+      border-radius: 10px; }
+      .main .culturasalsera .contenedor .textouno .texto {
+        padding: 40px 20px;
+        font-size: 1.1875rem;
+        color: #fff;
+        text-align: justify; }
+    .main .culturasalsera .contenedor .textodos {
+      width: 70.2%;
+      height: 442px;
+      background-color: #040219;
+      border-radius: 10px; }
+      .main .culturasalsera .contenedor .textodos .texto {
+        padding: 40px 20px;
+        font-size: 1.1875rem;
+        color: #fff;
+        text-align: justify; }
+    .main .culturasalsera .contenedor .mujer {
+      background-image: url("../img/salsamujer.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 28.2%;
+      height: 376px;
+      margin: 35px auto 0 auto;
+      border-radius: 10px; }
+
+.main .hacer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .hacer .titulo {
+    width: 100%;
+    font-family: 'titulo';
+    font-size: 72px;
+    color: #fff;
+    margin: 20px 0 -10px 0px;
+    text-align: center; }
+    .main .hacer .titulo .linea {
+      border: 5px;
+      background-color: #fff;
+      width: 990px;
+      height: 6px;
+      float: right; }
+  .main .hacer .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main .hacer .contenedor .ermitalug {
+      margin: 40px auto 0 auto;
+      background-image: url("../img/ermita.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 33.7%;
+      height: 276px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .ermitalug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0; }
+      .main .hacer .contenedor .ermitalug .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 10px;
+        text-align: center; }
+    .main .hacer .contenedor .ermitalug:hover {
+      background-image: url("../img/ermitaopacidad.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .ermitalug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .ermitalug:hover > .texto {
+      display: block; }
+    .main .hacer .contenedor .museolug {
+      margin: 65px auto 0 auto;
+      background-image: url("../img/museooro.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 39.7%;
+      height: 227px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .museolug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0; }
+      .main .hacer .contenedor .museolug .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 10px;
+        text-align: center; }
+    .main .hacer .contenedor .museolug:hover {
+      background-image: url("../img/museoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .museolug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .museolug:hover > .texto {
+      display: block; }
+    .main .hacer .contenedor .cristolug {
+      margin: 5px auto 0 auto;
+      background-image: url("../img/cristofrente.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 21.8%;
+      height: 347px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .cristolug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0 0 0; }
+      .main .hacer .contenedor .cristolug .texto {
+        display: none;
+        font-size: 14px;
+        color: #fff;
+        margin: 10px 10px 0 10px;
+        text-align: center; }
+    .main .hacer .contenedor .cristolug:hover {
+      background-image: url("../img/cristoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .cristolug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .cristolug:hover > .texto {
+      display: block; }
+    .main .hacer .contenedor .gatolug {
+      margin: 10px auto 0 auto;
+      background-image: url("../img/tejada.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 22.2%;
+      height: 329px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .gatolug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0 0 0; }
+      .main .hacer .contenedor .gatolug .texto {
+        display: none;
+        font-size: 15px;
+        color: #fff;
+        margin: 10px 10px 0 10px;
+        text-align: center; }
+    .main .hacer .contenedor .gatolug:hover {
+      background-image: url("../img/gatoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .gatolug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .gatolug:hover > .texto {
+      display: block; }
+    .main .hacer .contenedor .iglesialug {
+      margin: 40px auto 0 auto;
+      background-image: url("../img/iglesiasaantonio.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 39.3%;
+      height: 251px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .iglesialug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0 0 0; }
+      .main .hacer .contenedor .iglesialug .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 30px 10px 0 10px;
+        text-align: center; }
+    .main .hacer .contenedor .iglesialug:hover {
+      background-image: url("../img/iglesiaopaca.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .iglesialug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .iglesialug:hover > .texto {
+      display: block; }
+    .main .hacer .contenedor .zoolug {
+      margin: 40px auto 0 auto;
+      background-image: url("../img/zoo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 33.7%;
+      height: 249px;
+      border-radius: 10px; }
+      .main .hacer .contenedor .zoolug .subtitulo {
+        display: none;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0 0 0; }
+      .main .hacer .contenedor .zoolug .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 10px 0 10px;
+        text-align: center; }
+    .main .hacer .contenedor .zoolug:hover {
+      background-image: url("../img/zooopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .hacer .contenedor .zoolug:hover > .subtitulo {
+      display: block; }
+    .main .hacer .contenedor .zoolug:hover > .texto {
+      display: block; }
+
+.main .eventos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .eventos .titulo {
+    font-family: 'titulo';
+    font-size: 72px;
+    color: #fff;
+    margin: 110px 0 -10px 0px;
+    text-align: center;
+    width: 100%; }
+    .main .eventos .titulo .linea {
+      border: 5px;
+      background-color: #fff;
+      width: 1210px;
+      height: 6px; }
+  .main .eventos .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main .eventos .contenedor .feria {
+      margin: 40px auto 0 auto;
+      background-image: url("../img/feriasalsa.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67.7%;
+      height: 246px;
+      border-radius: 10px; }
+      .main .eventos .contenedor .feria .subtitulo {
+        display: none;
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0; }
+      .main .eventos .contenedor .feria .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 10px;
+        text-align: justify; }
+    .main .eventos .contenedor .feria:hover {
+      background-image: url("../img/mundialopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .eventos .contenedor .feria:hover > .subtitulo {
+      display: block; }
+    .main .eventos .contenedor .feria:hover > .texto {
+      display: block; }
+    .main .eventos .contenedor .mundial {
+      margin: 70px auto 0 auto;
+      background-image: url("../img/mundialsalsa.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 27.2%;
+      height: 182px;
+      border-radius: 10px; }
+    .main .eventos .contenedor .salsah {
+      margin: 40px auto 0 auto;
+      background-image: url("../img/salsahombre.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 27%;
+      height: 194px;
+      border-radius: 10px; }
+    .main .eventos .contenedor .petronio {
+      margin: 0 auto 0 auto;
+      background-image: url("../img/petroniogrupo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67.2%;
+      height: 270px;
+      border-radius: 10px; }
+      .main .eventos .contenedor .petronio .subtitulo {
+        display: none;
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0; }
+      .main .eventos .contenedor .petronio .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 10px;
+        text-align: justify; }
+    .main .eventos .contenedor .petronio:hover {
+      background-image: url("../img/petronioopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .eventos .contenedor .petronio:hover > .subtitulo {
+      display: block; }
+    .main .eventos .contenedor .petronio:hover > .texto {
+      display: block; }
+    .main .eventos .contenedor .grupo {
+      margin: -5px auto 0 auto;
+      background-image: url("../img/salsagrupochiqui.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 66.6%;
+      height: 286px;
+      border-radius: 10px; }
+      .main .eventos .contenedor .grupo .subtitulo {
+        display: none;
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+        margin: 15px 0; }
+      .main .eventos .contenedor .grupo .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 10px;
+        text-align: justify; }
+    .main .eventos .contenedor .grupo:hover {
+      background-image: url("../img/festivalopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .eventos .contenedor .grupo:hover > .subtitulo {
+      display: block; }
+    .main .eventos .contenedor .grupo:hover > .texto {
+      display: block; }
+    .main .eventos .contenedor .logo {
+      margin: 20px auto 0 auto;
+      background-image: url("../img/logopetronio.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 23%;
+      height: 230px;
+      border-radius: 10px; }
+
+.main .comer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .comer .titulo {
+    font-family: 'titulo';
+    font-size: 72px;
+    color: #fff;
+    margin: 90px 0 -10px 0px;
+    text-align: center;
+    width: 100%; }
+    .main .comer .titulo .linea {
+      border: 5px;
+      background-color: #fff;
+      width: 990px;
+      height: 6px;
+      float: right; }
+  .main .comer .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main .comer .contenedor .cholado {
+      margin: 33px auto 0 auto;
+      background-image: url("../img/cholado.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 32.6%;
+      height: 466px;
+      border-radius: 10px; }
+      .main .comer .contenedor .cholado .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        padding: 40px 0 0 0; }
+      .main .comer .contenedor .cholado .texto {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .cholado:hover {
+      background-image: url("../img/choladoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .pandebono {
+      margin: 33px auto 0 auto;
+      background-image: url("../img/pandebono.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 35.7%;
+      height: 236px;
+      border-radius: 10px; }
+      .main .comer .contenedor .pandebono .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .comer .contenedor .pandebono .texto {
+        display: none;
+        font-size: 20px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .pandebono:hover {
+      background-image: url("../img/pandbonoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .chontaduro {
+      margin: 33px auto 0 auto;
+      background-image: url("../img/chontaduro.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 30.4%;
+      height: 237px;
+      border-radius: 10px; }
+      .main .comer .contenedor .chontaduro .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .comer .contenedor .chontaduro .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .chontaduro:hover {
+      background-image: url("../img/chotaduroopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .manjar {
+      margin: -220px 17px 0 auto;
+      background-image: url("../img/manjar.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 33.3%;
+      height: 221px;
+      border-radius: 10px; }
+      .main .comer .contenedor .manjar .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .comer .contenedor .manjar .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .manjar:hover {
+      background-image: url("../img/manjaropaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .champus {
+      margin: -223px 0px 0 0;
+      background-image: url("../img/champusdos.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 30.2%;
+      height: 454px;
+      border-radius: 10px; }
+      .main .comer .contenedor .champus .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        padding: 40px 0 0 0; }
+      .main .comer .contenedor .champus .texto {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .champus:hover {
+      background-image: url("../img/champusopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .lulada {
+      margin: -220px 660px 0 auto;
+      background-image: url("../img/champus.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 33.6%;
+      height: 231px;
+      border-radius: 10px; }
+      .main .comer .contenedor .lulada .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .comer .contenedor .lulada .texto {
+        display: none;
+        font-size: 22px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .lulada:hover {
+      background-image: url("../img/luladaopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .comer .contenedor .sancocho {
+      margin: -220px 315px 0 auto;
+      background-image: url("../img/sancocho.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 33%;
+      height: 220px;
+      border-radius: 10px; }
+      .main .comer .contenedor .sancocho .subtitulo {
+        display: none;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .comer .contenedor .sancocho .texto {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: center; }
+    .main .comer .contenedor .sancocho:hover {
+      background-image: url("../img/sancochoopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+
+.main .lugares {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .main .lugares .titulo {
+    font-family: 'titulo';
+    font-size: 60px;
+    color: #fff;
+    margin: 90px 0 -10px 0px;
+    text-align: center;
+    width: 100%; }
+    .main .lugares .titulo .linea {
+      border: 5px;
+      background-color: #fff;
+      width: 1220px;
+      height: 6px;
+      float: right; }
+  .main .lugares .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 110px; }
+    .main .lugares .contenedor .sanantonio {
+      margin: 63px auto 0 auto;
+      background-image: url("../img/sanantonio.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 31.6%;
+      height: 246.5px;
+      border-radius: 10px; }
+    .main .lugares .contenedor .parqueperrouno {
+      margin: 42px auto 0 auto;
+      background-image: url("../img/parqueperro.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67.7%;
+      height: 278px;
+      border-radius: 10px; }
+      .main .lugares .contenedor .parqueperrouno .subtitulo {
+        display: none;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .lugares .contenedor .parqueperrouno .texto {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: justify; }
+    .main .lugares .contenedor .parqueperrouno:hover {
+      background-image: url("../img/perroopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .lugares .contenedor .parqueperrouno:hover > .subtitulo {
+      display: block; }
+    .main .lugares .contenedor .parqueperrouno:hover > .texto {
+      display: block; }
+    .main .lugares .contenedor .merced {
+      margin: 42px auto 0 auto;
+      background-image: url("../img/merced.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67.7%;
+      height: 273px;
+      border-radius: 10px; }
+      .main .lugares .contenedor .merced .subtitulo {
+        display: none;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .lugares .contenedor .merced .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: justify; }
+    .main .lugares .contenedor .merced:hover {
+      background-image: url("../img/antonioopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .lugares .contenedor .merced:hover > .subtitulo {
+      display: block; }
+    .main .lugares .contenedor .merced:hover > .texto {
+      display: block; }
+    .main .lugares .contenedor .comida {
+      margin: 63px auto 0 auto;
+      background-image: url("../img/ingeniocomida.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 28.3%;
+      height: 275px;
+      border-radius: 10px; }
+    .main .lugares .contenedor .parqueperrodos {
+      margin: 63px auto 0 auto;
+      background-image: url("../img/parqueperrodos.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 31.9%;
+      height: 240px;
+      border-radius: 10px; }
+    .main .lugares .contenedor .parqueingenio {
+      margin: 42px auto 0 auto;
+      background-image: url("../img/ingenio.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67.9%;
+      height: 295px;
+      border-radius: 10px; }
+      .main .lugares .contenedor .parqueingenio .subtitulo {
+        display: none;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0; }
+      .main .lugares .contenedor .parqueingenio .texto {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+        margin: 15px 10px;
+        text-align: justify; }
+    .main .lugares .contenedor .parqueingenio:hover {
+      background-image: url("../img/ingenioopaco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #fff;
+      border-radius: 10px; }
+    .main .lugares .contenedor .parqueingenio:hover > .subtitulo {
+      display: block; }
+    .main .lugares .contenedor .parqueingenio:hover > .texto {
+      display: block; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px; }
+  footer .titulo {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%; }
+  footer .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%; }
+    footer .contenedor .fb {
+      background-image: url("../img/fb.png");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      width: 2.5%;
+      height: 53px;
+      margin: 10px 20px 10px auto; }
+    footer .contenedor .yt {
+      background-image: url("../img/yt.png");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      width: 5.1%;
+      height: 36px;
+      margin: 20px 30px 10px 30px; }
+    footer .contenedor .int {
+      background-image: url("../img/int.png");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      width: 5.4%;
+      height: 54px;
+      margin: 10px auto 10px 20px; }
+  footer .txt {
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px; }
+
+@media screen and (max-width: 1080px) {
+  .main .eventos .titulo {
+    font-size: 3.75rem; }
+    .main .eventos .titulo .linea {
+      width: 983px; }
+  .main .lugares .titulo {
+    font-size: 3.125rem; }
+    .main .lugares .titulo .linea {
+      width: 980px; }
+  .main .culturasalsera .caja .linea {
+    width: 895px; }
+  .main .hacer .titulo {
+    font-size: 3.75rem; }
+    .main .hacer .titulo .linea {
+      width: 805px; }
+  .main .comer .titulo {
+    font-size: 3.75rem; }
+    .main .comer .titulo .linea {
+      width: 810px; } }
+
+@media screen and (max-width: 980px) {
+  header .contenedor .contenedor-texto .textouno {
+    padding-left: 50px; }
+  header .contenedor .contenedor-texto .textodos {
+    padding-left: 50px; }
+  header .contenedor .menu {
+    text-align: center; }
+  .main .eventos .titulo {
+    font-size: 3.4375rem; }
+    .main .eventos .titulo .linea {
+      width: 895px; }
+  .main .eventos .contenedor .feria .subtitulo {
+    font-size: 2.2rem;
+    margin: 20px 0 0 0; }
+  .main .eventos .contenedor .feria .texto {
+    font-size: 1rem;
+    margin: 5px 10px; }
+  .main .eventos .contenedor .petronio .subtitulo {
+    font-size: 2.2rem;
+    margin: 20px 0 0 0; }
+  .main .eventos .contenedor .petronio .texto {
+    font-size: 1rem;
+    margin: 5px 10px; }
+  .main .eventos .contenedor .grupo .subtitulo {
+    font-size: 2.2rem;
+    margin: 25px 0 0 0; }
+  .main .eventos .contenedor .grupo .texto {
+    font-size: 1rem;
+    margin: 5px 10px; }
+  .main .lugares .titulo {
+    font-size: 3.125rem; }
+    .main .lugares .titulo .linea {
+      width: 935px; }
+  .main .hacer .titulo {
+    font-size: 3.75rem; }
+    .main .hacer .titulo .linea {
+      width: 755px; }
+  .main .hacer .contenedor .ermitalug .texto {
+    font-size: 1rem; }
+  .main .hacer .contenedor .cristolug .subtitulo {
+    font-size: 1.5625rem;
+    margin: 43px 0 0 0; }
+  .main .hacer .contenedor .cristolug .texto {
+    font-size: 0.75rem; }
+  .main .hacer .contenedor .gatolug .subtitulo {
+    font-size: 1.5625rem;
+    margin: 30px 0 0 0; }
+  .main .hacer .contenedor .gatolug .texto {
+    font-size: 0.875rem; }
+  .main .hacer .contenedor .zoolug .subtitulo {
+    font-size: 1.5625rem;
+    margin: 25px 0 0 0; }
+  .main .hacer .contenedor .zoolug .texto {
+    font-size: 0.9375rem; }
+  .main .culturasalsera .caja .titulo {
+    font-size: 3.75rem; }
+  .main .culturasalsera .caja .linea {
+    width: 790px; }
+  .main .comer .titulo {
+    font-size: 3.125rem; }
+    .main .comer .titulo .linea {
+      width: 720px; }
+  .main .comer .contenedor .cholado .texto {
+    font-size: 1.25rem; }
+  .main .comer .contenedor .chontaduro .subtitulo {
+    font-size: 2rem;
+    margin: 25px 0 0 0; }
+  .main .comer .contenedor .chontaduro .texto {
+    font-size: 1rem;
+    margin: 5px 10px; }
+  .main .comer .contenedor .manjar .subtitulo {
+    font-size: 2rem;
+    margin: 20px 0 0 0; }
+  .main .comer .contenedor .manjar .texto {
+    font-size: 1rem;
+    margin: 2px 10px; }
+  .main .comer .contenedor .lulada .subtitulo {
+    font-size: 2rem;
+    margin: 45px 0 0 0; }
+  .main .comer .contenedor .lulada .texto {
+    font-size: 1.0625rem;
+    margin: 0 10px; }
+  .main .lugares .contenedor .parqueperrouno .texto {
+    font-size: 1.125rem; }
+  .main .lugares .contenedor .merced .subtitulo {
+    margin: 20px 0 0 0; }
+  .main .lugares .contenedor .merced .texto {
+    margin: 0px 10px 0 15px; } }
+
+@media screen and (max-width: 880px) {
+  .main .culturasalsera .caja .titulo {
+    font-size: 3.75rem; }
+  .main .culturasalsera .caja .linea {
+    width: 740px; }
+  .main .culturasalsera .contenedor .textouno .texto {
+    padding: 20px 20px; }
+  .main .culturasalsera .contenedor .textodos .texto {
+    padding: 40px 10px 0; }
+  .main .hacer .titulo {
+    font-size: 3.75rem; }
+    .main .hacer .titulo .linea {
+      width: 705px; }
+  .main .hacer .contenedor .ermitalug {
+    width: 45%; }
+  .main .hacer .contenedor .museolug {
+    width: 45%; }
+  .main .hacer .contenedor .cristolug {
+    width: 45%; }
+    .main .hacer .contenedor .cristolug .texto {
+      font-size: 1.0625rem; }
+  .main .hacer .contenedor .gatolug {
+    width: 45%; }
+    .main .hacer .contenedor .gatolug .texto {
+      font-size: 1.125rem; }
+  .main .hacer .contenedor .iglesialug {
+    width: 45%; }
+  .main .hacer .contenedor .zoolug {
+    width: 45%; }
+  .main .eventos .titulo {
+    font-size: 3.125rem; }
+    .main .eventos .titulo .linea {
+      width: 815px; }
+  .main .eventos .contenedor .feria .subtitulo {
+    font-size: 2rem;
+    margin: 30px 0 0 0; }
+  .main .eventos .contenedor .feria .texto {
+    font-size: 1rem;
+    margin: 5px 10px; }
+  .main .eventos .contenedor .petronio .subtitulo {
+    font-size: 2rem;
+    margin: 34px 0 0 0; }
+  .main .eventos .contenedor .petronio .texto {
+    font-size: .9rem;
+    margin: 5px 10px; }
+  .main .eventos .contenedor .grupo .subtitulo {
+    font-size: 2rem;
+    margin: 35px 0 0 0; }
+  .main .eventos .contenedor .grupo .texto {
+    font-size: .9rem;
+    margin: 5px 10px; }
+  .main .comer .titulo {
+    font-size: 3.125rem; }
+    .main .comer .titulo .linea {
+      width: 670px; }
+  .main .comer .contenedor .cholado {
+    width: 45%;
+    margin: 30px auto 0 auto; }
+  .main .comer .contenedor .pandebono {
+    width: 45%;
+    margin: auto; }
+  .main .comer .contenedor .chontaduro {
+    width: 45%;
+    margin: 30px auto 0 auto; }
+  .main .comer .contenedor .manjar {
+    width: 45%;
+    margin: 30px auto 0 auto; }
+  .main .comer .contenedor .champus {
+    width: 45%;
+    margin: 30px auto 0 auto; }
+  .main .comer .contenedor .lulada {
+    width: 45%;
+    margin: auto; }
+  .main .comer .contenedor .sancocho {
+    width: 45%;
+    margin: 30px auto 0 auto; }
+  .main .lugares .titulo {
+    font-size: 2.5rem; }
+    .main .lugares .titulo .linea {
+      width: 798px; }
+  .main .lugares .contenedor .parqueperrouno .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 20px; }
+  .main .lugares .contenedor .parqueperrouno .texto {
+    font-size: 1.125rem; }
+  .main .lugares .contenedor .merced .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 10px; }
+  .main .lugares .contenedor .merced .texto {
+    font-size: 1rem;
+    margin: 0px 10px 0 15px; }
+  .main .lugares .contenedor .parqueingenio .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 10px; }
+  .main .lugares .contenedor .parqueingenio .texto {
+    font-size: 1rem;
+    margin: 0px 10px 0 15px; }
+  footer .contenedor .fb {
+    width: 3%; }
+  footer .contenedor .yt {
+    width: 6.2%; }
+  footer .contenedor .int {
+    width: 6.2%; } }
+
+@media screen and (max-width: 780px) {
+  .main .cali {
+    font-size: 0.9rem; }
+  .main .culturasalsera .contenedor .textouno .texto {
+    font-size: 1rem; }
+  .main .culturasalsera .contenedor .textodos .texto {
+    font-size: 1rem; }
+  .main .eventos .titulo {
+    font-size: 2.8rem; }
+    .main .eventos .titulo .linea {
+      width: 730px; }
+  .main .eventos .contenedor .feria {
+    width: 95%;
+    margin: 20px auto 0; }
+  .main .eventos .contenedor .mundial {
+    width: 45%;
+    margin: auto; }
+  .main .eventos .contenedor .salsah {
+    width: 45%;
+    margin: auto; }
+  .main .eventos .contenedor .petronio {
+    width: 95%;
+    margin: auto; }
+  .main .eventos .contenedor .grupo {
+    width: 95%;
+    margin: auto; }
+  .main .eventos .contenedor .logo {
+    display: none; }
+  .main .hacer .contenedor .museolug .subtitulo {
+    font-size: 1.5625rem; }
+  .main .hacer .contenedor .museolug .texto {
+    font-size: 1rem; }
+  .main .hacer .contenedor .cristolug .subtitulo {
+    margin: 22px 0 0 0; }
+  .main .hacer .contenedor .iglesialug .subtitulo {
+    margin: 27px 0 0px 0; }
+  .main .hacer .contenedor .iglesialug .texto {
+    margin: 0px 10px 0 10px; }
+  .main .lugares .titulo {
+    font-size: 2.5rem; }
+    .main .lugares .titulo .linea {
+      width: 798px; }
+  .main .lugares .contenedor .parqueperrouno .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 20px; }
+  .main .lugares .contenedor .parqueperrouno .texto {
+    font-size: 1.125rem; }
+  .main .lugares .contenedor .merced .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 0px; }
+  .main .lugares .contenedor .merced .texto {
+    font-size: 1rem;
+    margin: 0px 10px 0 15px; }
+  .main .lugares .contenedor .parqueingenio .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 0px; }
+  .main .lugares .contenedor .parqueingenio .texto {
+    font-size: 1rem;
+    margin: 0px 10px 0 15px; }
+  footer .contenedor .fb {
+    width: 3.5%; }
+  footer .contenedor .yt {
+    width: 7.2%; }
+  footer .contenedor .int {
+    width: 7.2%; } }
+
+@media screen and (max-width: 680px) {
+  .main .culturasalsera .caja .linea {
+    width: 100%; }
+  .main .eventos .titulo .linea {
+    width: 100%; }
+  .main .hacer .contenedor .museolug .subtitulo {
+    font-size: 1.4rem;
+    margin: 23px 0 0 0; }
+  .main .hacer .contenedor .museolug .texto {
+    font-size: 1rem; }
+  .main .hacer .contenedor .cristolug .subtitulo {
+    margin: 22px 0 0 0; }
+  .main .hacer .contenedor .cristolug .texto {
+    font-size: 0.95rem; }
+  .main .hacer .contenedor .iglesialug .subtitulo {
+    margin: 42px 0 0px 0;
+    font-size: 1.4rem; }
+  .main .hacer .contenedor .iglesialug .texto {
+    font-size: 1rem;
+    margin: 0px 10px 0 10px; }
+  .main .hacer .contenedor .zoolug .texto {
+    font-size: 0.9rem; }
+  .main .comer .contenedor .pandebono .texto {
+    font-size: 1.0625rem; }
+  .main .comer .contenedor .manjar .subtitulo {
+    font-size: 1.5rem; }
+  .main .comer .contenedor .manjar .texto {
+    font-size: 0.95rem; }
+  .main .lugares .titulo {
+    font-size: 2.3rem; }
+    .main .lugares .titulo .linea {
+      width: 100%; }
+  .main .lugares .contenedor .parqueperrouno .subtitulo {
+    font-size: 1.875rem;
+    margin: 50px 0 20px; }
+  .main .lugares .contenedor .parqueperrouno .texto {
+    font-size: 1rem; }
+  .main .lugares .contenedor .merced .subtitulo {
+    font-size: 1.875rem;
+    margin: 55px 0 0px; }
+  .main .lugares .contenedor .merced .texto {
+    font-size: 0.85rem;
+    margin: 0px 10px 0 15px; }
+  .main .lugares .contenedor .parqueingenio .subtitulo {
+    font-size: 1.875rem;
+    margin: 60px 0 0px; }
+  .main .lugares .contenedor .parqueingenio .texto {
+    font-size: 0.85rem;
+    margin: 0px 10px 0 15px; }
+  footer .contenedor .fb {
+    width: 4%; }
+  footer .contenedor .yt {
+    width: 8%; }
+  footer .contenedor .int {
+    width: 8%; } }
+
+@media screen and (max-width: 580px) {
+  header .contenedor .contenedor-texto .textouno {
+    padding-left: 80px; }
+  header .contenedor .contenedor-texto .textodos {
+    padding-left: 80px; }
+  header .contenedor .menu {
+    text-align: center; }
+    header .contenedor .menu a {
+      font-size: 1.6rem; }
+  .main .cali {
+    font-size: 0.8rem; }
+  .main .culturasalsera .caja .titulo {
+    font-size: 3.4rem; }
+  .main .culturasalsera .caja .linea {
+    width: 100%; }
+  .main .culturasalsera .contenedor .textouno .texto {
+    font-size: 0.9rem; }
+  .main .culturasalsera .contenedor .textodos .texto {
+    font-size: 0.95rem; }
+  .main .hacer .contenedor .ermitalug .subtitulo {
+    margin: 40px 0 0 0; }
+  .main .hacer .contenedor .ermitalug .texto {
+    font-size: 0.8rem; }
+  .main .hacer .contenedor .museolug .subtitulo {
+    font-size: 1.2rem;
+    margin: 40px 0 0 0; }
+  .main .hacer .contenedor .museolug .texto {
+    font-size: 0.8rem; }
+  .main .hacer .contenedor .cristolug .subtitulo {
+    margin: 12px 0 0 0; }
+  .main .hacer .contenedor .cristolug .texto {
+    font-size: 0.95rem; }
+  .main .hacer .contenedor .gatolug .subtitulo {
+    margin: 7px 0 0 0; }
+  .main .hacer .contenedor .iglesialug .subtitulo {
+    margin: 48px 0 0px 0;
+    font-size: 1.2rem; }
+  .main .hacer .contenedor .iglesialug .texto {
+    font-size: 0.9rem;
+    margin: 0px 10px 0 10px; }
+  .main .hacer .contenedor .zoolug .subtitulo {
+    font-size: 1.2rem;
+    margin: 40px 0 0 0; }
+  .main .hacer .contenedor .zoolug .texto {
+    font-size: 0.76rem; }
+  .main .comer .contenedor .cholado .subtitulo {
+    padding: 45px 0 0 0; }
+  .main .comer .contenedor .cholado .texto {
+    font-size: 1.2rem; }
+  .main .comer .contenedor .pandebono .subtitulo {
+    font-size: 2rem;
+    margin: 41px 0 0 0; }
+  .main .comer .contenedor .pandebono .texto {
+    font-size: 1rem;
+    margin: 5px 10px 0; }
+  .main .comer .contenedor .chontaduro .subtitulo {
+    font-size: 1.5rem;
+    margin: 33px 0 0 0; }
+  .main .comer .contenedor .chontaduro .texto {
+    font-size: 0.9rem; }
+  .main .comer .contenedor .manjar .subtitulo {
+    font-size: 1.5rem;
+    margin: 35px 0 0 0; }
+  .main .comer .contenedor .manjar .texto {
+    font-size: 0.8rem; }
+  .main .comer .contenedor .champus .subtitulo {
+    padding: 40px 0 0 0; }
+  .main .comer .contenedor .champus .texto {
+    font-size: 1.25rem; }
+  .main .comer .contenedor .sancocho .subtitulo {
+    font-size: 1.875rem;
+    margin: 33px 0 0 0; }
+  .main .comer .contenedor .sancocho .texto {
+    font-size: 0.875rem; }
+  .main .lugares .contenedor .sanantonio {
+    display: none; }
+  .main .lugares .contenedor .parqueperrouno {
+    width: 90%;
+    margin: 0px auto 0 auto; }
+  .main .lugares .contenedor .merced {
+    width: 90%;
+    margin: 0px auto 0 auto; }
+  .main .lugares .contenedor .comida {
+    width: 45%;
+    margin: -15px auto 0 auto; }
+  .main .lugares .contenedor .parqueperrodos {
+    width: 45%;
+    margin: 0px auto 0 auto; }
+  .main .lugares .contenedor .parqueingenio {
+    width: 90%;
+    margin: 0px auto 0 auto; }
+  footer .contenedor .fb {
+    width: 5%; }
+  footer .contenedor .yt {
+    width: 9%; }
+  footer .contenedor .int {
+    width: 9.3%; } }
+
+@media screen and (max-width: 480px) {
+  header .contenedor .contenedor-texto .visita {
+    padding-top: 55px; }
+  header .contenedor .contenedor-texto .textouno {
+    padding-left: 80px;
+    font-size: 4rem; }
+  header .contenedor .contenedor-texto .textodos {
+    padding-left: 80px;
+    font-size: 7.6875rem; }
+  header .contenedor .menu {
+    text-align: center; }
+    header .contenedor .menu a {
+      font-size: 1.26rem; }
+  .main .cali .contenedor .imagenuno {
+    margin: 15px auto;
+    width: 90%; }
+  .main .cali .contenedor .imagendos {
+    margin: 15px auto;
+    width: 90%; }
+    .main .cali .contenedor .imagendos .txt .texto {
+      font-size: 1.2rem; }
+  .main .cali .contenedor .imagentres {
+    margin: 15px auto;
+    width: 90%; }
+    .main .cali .contenedor .imagentres .txt .texto {
+      font-size: 1.2rem; }
+  .main .cali .contenedor .imagencuatro {
+    margin: 15px auto;
+    width: 90%; }
+  .main .culturasalsera .contenedor .grupogran {
+    width: 90%;
+    margin: 15px auto; }
+  .main .culturasalsera .contenedor .textouno {
+    width: 90%;
+    margin: 15px auto; }
+    .main .culturasalsera .contenedor .textouno .texto {
+      font-size: 1.1rem; }
+  .main .culturasalsera .contenedor .textodos {
+    width: 90%;
+    margin: 15px auto; }
+  .main .culturasalsera .contenedor .mujer {
+    width: 90%;
+    margin: 15px auto; }
+  .main .hacer .contenedor .ermitalug {
+    width: 90%;
+    margin: 15px auto 10px; }
+    .main .hacer .contenedor .ermitalug .texto {
+      font-size: 1.15rem; }
+  .main .hacer .contenedor .museolug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .museolug .texto {
+      font-size: 1.15rem; }
+  .main .hacer .contenedor .cristolug {
+    width: 90%;
+    margin: 10px auto; }
+  .main .hacer .contenedor .gatolug {
+    width: 90%;
+    margin: 10px auto; }
+  .main .hacer .contenedor .iglesialug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .iglesialug .texto {
+      font-size: 1.1rem; }
+  .main .hacer .contenedor .zoolug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .zoolug .subtitulo {
+      font-size: 1.5625rem;
+      margin: 25px 0 0 0; }
+    .main .hacer .contenedor .zoolug .texto {
+      font-size: 1rem; }
+  .main .eventos .contenedor .feria .subtitulo {
+    font-size: 1.5rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .feria .texto {
+    font-size: 0.8rem; }
+  .main .eventos .contenedor .petronio .subtitulo {
+    font-size: 1.3rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .petronio .texto {
+    font-size: 0.7rem; }
+  .main .eventos .contenedor .grupo .subtitulo {
+    font-size: 1.5rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .grupo .texto {
+    font-size: 0.75rem; }
+  .main .comer .contenedor .cholado {
+    width: 90%;
+    margin: 10px auto; }
+    .main .comer .contenedor .cholado .texto {
+      font-size: 1.5rem; }
+  .main .comer .contenedor .pandebono {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .pandebono .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .chontaduro {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .chontaduro .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .manjar {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .manjar .texto {
+      font-size: 1.1rem; }
+  .main .comer .contenedor .champus {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .champus .texto {
+      font-size: 1.5rem; }
+  .main .comer .contenedor .lulada {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .lulada .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .sancocho {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .sancocho .texto {
+      font-size: 1.2rem; }
+  .main .lugares .contenedor .parqueperrouno .subtitulo {
+    margin: 60px 0 10px; }
+  .main .lugares .contenedor .merced .texto {
+    font-size: 0.8rem; }
+  footer .contenedor .fb {
+    width: 7%; }
+  footer .contenedor .yt {
+    width: 12%; }
+  footer .contenedor .int {
+    width: 12.3%; } }
+
+@media screen and (max-width: 375px) {
+  header .contenedor .contenedor-texto .visita {
+    padding-top: 30px;
+    font-size: 1.5em; }
+  header .contenedor .contenedor-texto .textouno {
+    padding-left: 80px;
+    font-size: 2.5rem; }
+  header .contenedor .contenedor-texto .textodos {
+    padding-left: 80px;
+    font-size: 4.9rem; }
+  header .contenedor .menu {
+    text-align: center; }
+    header .contenedor .menu a {
+      font-size: 1rem;
+      padding: 0 10px; }
+  .main .cali .contenedor .imagenuno {
+    margin: 15px auto;
+    width: 90%; }
+  .main .cali .contenedor .imagendos {
+    margin: 15px auto;
+    width: 90%; }
+    .main .cali .contenedor .imagendos .txt .texto {
+      font-size: 1.2rem; }
+  .main .cali .contenedor .imagentres {
+    margin: 15px auto;
+    width: 90%; }
+    .main .cali .contenedor .imagentres .txt .texto {
+      font-size: 1.2rem; }
+  .main .cali .contenedor .imagencuatro {
+    margin: 15px auto;
+    width: 90%; }
+  .main .culturasalsera .titulo {
+    font-size: 2rem; }
+  .main .culturasalsera .contenedor .grupogran {
+    width: 90%;
+    margin: 15px auto; }
+  .main .culturasalsera .contenedor .textouno {
+    width: 90%;
+    margin: 15px auto; }
+    .main .culturasalsera .contenedor .textouno .texto {
+      font-size: 1rem; }
+  .main .culturasalsera .contenedor .textodos {
+    width: 90%;
+    margin: 7px auto; }
+    .main .culturasalsera .contenedor .textodos .texto {
+      font-size: 0.9rem; }
+  .main .culturasalsera .contenedor .mujer {
+    width: 90%;
+    margin: 15px auto; }
+  .main .hacer .titulo {
+    font-size: 2rem; }
+  .main .hacer .contenedor .ermitalug {
+    width: 90%;
+    margin: 15px auto 10px; }
+    .main .hacer .contenedor .ermitalug .texto {
+      font-size: 1rem; }
+  .main .hacer .contenedor .museolug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .museolug .texto {
+      font-size: 0.9rem; }
+  .main .hacer .contenedor .cristolug {
+    width: 90%;
+    margin: 10px auto; }
+  .main .hacer .contenedor .gatolug {
+    width: 90%;
+    margin: 10px auto; }
+  .main .hacer .contenedor .iglesialug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .iglesialug .texto {
+      font-size: 1rem; }
+  .main .hacer .contenedor .zoolug {
+    width: 90%;
+    margin: 10px auto; }
+    .main .hacer .contenedor .zoolug .subtitulo {
+      font-size: 1.5625rem;
+      margin: 25px 0 0 0; }
+    .main .hacer .contenedor .zoolug .texto {
+      font-size: 1rem; }
+  .main .eventos .titulo {
+    font-size: 2rem; }
+  .main .eventos .contenedor .feria .subtitulo {
+    font-size: 1.5rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .feria .texto {
+    font-size: 0.8rem; }
+  .main .eventos .contenedor .petronio .subtitulo {
+    font-size: 1.3rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .petronio .texto {
+    font-size: 0.7rem; }
+  .main .eventos .contenedor .grupo .subtitulo {
+    font-size: 1.5rem;
+    margin: 50px 0 0 0; }
+  .main .eventos .contenedor .grupo .texto {
+    font-size: 0.75rem; }
+  .main .comer .titulo {
+    font-size: 2rem; }
+  .main .comer .contenedor .cholado {
+    width: 90%;
+    margin: 5px auto; }
+    .main .comer .contenedor .cholado .texto {
+      font-size: 1.5rem;
+      margin: 0px 10px; }
+  .main .comer .contenedor .pandebono {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .pandebono .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .chontaduro {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .chontaduro .subtitulo {
+      margin: 5px 0; }
+    .main .comer .contenedor .chontaduro .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .manjar {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .manjar .subtitulo {
+      margin: 5px 0; }
+    .main .comer .contenedor .manjar .texto {
+      font-size: 1.1rem; }
+  .main .comer .contenedor .champus {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .champus .texto {
+      font-size: 1.5rem; }
+  .main .comer .contenedor .lulada {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .lulada .texto {
+      font-size: 1.2rem; }
+  .main .comer .contenedor .sancocho {
+    width: 90%;
+    margin: 15px auto; }
+    .main .comer .contenedor .sancocho .subtitulo {
+      margin: 10px 0; }
+    .main .comer .contenedor .sancocho .texto {
+      font-size: 1.2rem; }
+  .main .lugares .titulo {
+    font-size: 2rem; }
+  .main .lugares .contenedor .parqueperrouno .subtitulo {
+    margin: 60px 0 10px; }
+  .main .lugares .contenedor .merced .texto {
+    font-size: 0.8rem; }
+  footer .titulo {
+    font-size: 20px; }
+  footer .contenedor .fb {
+    width: 8%; }
+  footer .contenedor .yt {
+    width: 15%; }
+  footer .contenedor .int {
+    width: 15%; } }
